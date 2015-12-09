@@ -23,7 +23,7 @@ if git:
 
 	os.system("cp %s %s" % (fname, dir))
 
-	os.system("cd %s; git checkout master; git add %s; git commit -am 'Added %s'; git push origin master;" % (dir, fname, fname) )
+	os.system("cd %s; git checkout gh-pages; git add %s; git commit -am 'Added %s'; git push origin gh-pages;" % (dir, fname, fname) )
 
 	url = "http://jhmatthews.github.io/gsite2/figs/%s" % fname
 
